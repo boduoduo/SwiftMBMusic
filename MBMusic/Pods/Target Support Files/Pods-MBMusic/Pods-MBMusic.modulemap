@@ -1,0 +1,6 @@
+framework module Pods_MBMusic {
+  umbrella header "Pods-MBMusic-umbrella.h"
+
+  export *
+  module * { export * }
+}
