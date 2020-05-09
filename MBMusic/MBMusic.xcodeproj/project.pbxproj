@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5E5CD87B4ECDBDE1BB88F6F5 /* Pods_MBMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B10CE167426E66D247D5C528 /* Pods_MBMusic.framework */; };
+		E756F35224668F9F0054B591 /* MBNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756F35124668F9F0054B591 /* MBNavigationView.swift */; };
+		E756F3552466936D0054B591 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756F3542466936D0054B591 /* Global.swift */; };
 		E7AB3EDB24558324006EB0D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AB3EDA24558324006EB0D1 /* AppDelegate.swift */; };
 		E7AB3EDD24558324006EB0D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AB3EDC24558324006EB0D1 /* SceneDelegate.swift */; };
 		E7AB3EDF24558324006EB0D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AB3EDE24558324006EB0D1 /* ViewController.swift */; };
@@ -27,6 +29,8 @@
 /* Begin PBXFileReference section */
 		B10CE167426E66D247D5C528 /* Pods_MBMusic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MBMusic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0FD9A5F11B42D90ADCD5E0B /* Pods-MBMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBMusic.debug.xcconfig"; path = "Target Support Files/Pods-MBMusic/Pods-MBMusic.debug.xcconfig"; sourceTree = "<group>"; };
+		E756F35124668F9F0054B591 /* MBNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBNavigationView.swift; sourceTree = "<group>"; };
+		E756F3542466936D0054B591 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		E7AB3ED724558324006EB0D1 /* MBMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MBMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7AB3EDA24558324006EB0D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7AB3EDC24558324006EB0D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +79,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E756F3532466934D0054B591 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				E756F3542466936D0054B591 /* Global.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
 		E7AB3ECE24558324006EB0D1 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +108,7 @@
 		E7AB3ED924558324006EB0D1 /* MBMusic */ = {
 			isa = PBXGroup;
 			children = (
+				E756F3532466934D0054B591 /* Global */,
 				E7AB3F072456D33E006EB0D1 /* Categoty */,
 				E7AB3F082456D33E006EB0D1 /* Utils */,
 				E7AB3F092456D33E006EB0D1 /* Venders */,
@@ -415,6 +428,7 @@
 		E7AB3F172456D8BE006EB0D1 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				E756F35124668F9F0054B591 /* MBNavigationView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -540,8 +554,10 @@
 				E7AB3F1F2456D96A006EB0D1 /* MBRankViewController.swift in Sources */,
 				E7AB3F0F2456D3C1006EB0D1 /* MBTabBarViewController.swift in Sources */,
 				E7AB3EDB24558324006EB0D1 /* AppDelegate.swift in Sources */,
+				E756F3552466936D0054B591 /* Global.swift in Sources */,
 				E7AB3F1D2456D95E006EB0D1 /* MBSearchViewController.swift in Sources */,
 				E7AB3F1B2456D938006EB0D1 /* MBRecommendViewController.swift in Sources */,
+				E756F35224668F9F0054B591 /* MBNavigationView.swift in Sources */,
 				E7AB3EDD24558324006EB0D1 /* SceneDelegate.swift in Sources */,
 				E7AB3F232456DCC2006EB0D1 /* UIColorExtention.swift in Sources */,
 				E7AB3F192456D8D1006EB0D1 /* MBBaseViewController.swift in Sources */,

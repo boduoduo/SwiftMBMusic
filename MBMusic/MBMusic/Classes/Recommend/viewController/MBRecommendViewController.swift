@@ -14,5 +14,12 @@ class MBRecommendViewController: MBBaseViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+        prepareUI()
+    }
+    
+    func prepareUI() {
+        let navigationView = MBNavigationView.navigation()
+        self.view.addSubview(navigationView)
     }
 }
