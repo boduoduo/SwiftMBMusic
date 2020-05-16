@@ -9,4 +9,7 @@ target 'MBMusic' do
   pod 'Kingfisher', '5.13.4'
   pod 'RxSwift', '5'
   pod 'RxCocoa', '5'
+  pod 'LLCycleScrollView'
+  pod 'SwiftyJSON'
+  pod 'Moya', '~> 14.0'
 end

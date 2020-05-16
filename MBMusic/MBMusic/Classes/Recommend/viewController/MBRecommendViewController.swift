@@ -21,5 +21,7 @@ class MBRecommendViewController: MBBaseViewController {
     func prepareUI() {
         let navigationView = MBNavigationView.navigation()
         self.view.addSubview(navigationView)
+        let banner = MBRecommendBanner.banner(imageURLs: [])
+        self.view.addSubview(banner)
     }
 }
