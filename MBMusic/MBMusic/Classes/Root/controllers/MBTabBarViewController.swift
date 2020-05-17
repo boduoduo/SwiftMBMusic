@@ -25,15 +25,15 @@ class MBTabBarViewController: UITabBarController {
         let _ = configTabBarItem(title: "歌手",
                                  imageName: "gt_tab_invest",
                                  selectedImage: "gt_tab_invest_press",
-                                 viewController: MBRecommendViewController.init())
+                                 viewController: MBSingerViewController.init())
         let _ = configTabBarItem(title: "排行",
                                  imageName: "gt_tab_faxian",
                                  selectedImage: "gt_tab_faxian_press",
-                                 viewController: MBRecommendViewController.init())
+                                 viewController: MBRankViewController.init())
         let _ = configTabBarItem(title: "搜索",
                                  imageName: "gt_tab_me",
                                  selectedImage: "gt_tab_me_press",
-                                 viewController: MBRecommendViewController.init())
+                                 viewController: MBSearchViewController.init())
     }
 
     func configTabBarItem(title: String, imageName: String, selectedImage: String, viewController: UIViewController) -> MBNavigationController {

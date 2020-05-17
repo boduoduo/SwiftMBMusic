@@ -25,8 +25,11 @@
 		E7AB3F212456D979006EB0D1 /* MBSingerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AB3F202456D979006EB0D1 /* MBSingerViewController.swift */; };
 		E7AB3F232456DCC2006EB0D1 /* UIColorExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AB3F222456DCC2006EB0D1 /* UIColorExtention.swift */; };
 		E7FA58F8246FE03400FB412E /* MBRecommendBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FA58F7246FE03400FB412E /* MBRecommendBanner.swift */; };
-		E7FA58FA246FE9E900FB412E /* MBRecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FA58F9246FE9E900FB412E /* MBRecommendViewModel.swift */; };
 		E7FA58FD246FF76B00FB412E /* MBHttpRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FA58FC246FF76B00FB412E /* MBHttpRequestManager.swift */; };
+		E7FA58FF2470D30400FB412E /* MBRecommendProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FA58FE2470D30400FB412E /* MBRecommendProvider.swift */; };
+		E7FA59012471211500FB412E /* MBRequestLoadingPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FA59002471211500FB412E /* MBRequestLoadingPlugin.swift */; };
+		E7FA590324712DEF00FB412E /* MBRecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FA590224712DEF00FB412E /* MBRecommendViewModel.swift */; };
+		E7FA59052471343A00FB412E /* MBBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FA59042471343A00FB412E /* MBBanner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,8 +54,11 @@
 		E7AB3F202456D979006EB0D1 /* MBSingerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBSingerViewController.swift; sourceTree = "<group>"; };
 		E7AB3F222456DCC2006EB0D1 /* UIColorExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtention.swift; sourceTree = "<group>"; };
 		E7FA58F7246FE03400FB412E /* MBRecommendBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBRecommendBanner.swift; sourceTree = "<group>"; };
-		E7FA58F9246FE9E900FB412E /* MBRecommendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBRecommendViewModel.swift; sourceTree = "<group>"; };
 		E7FA58FC246FF76B00FB412E /* MBHttpRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBHttpRequestManager.swift; sourceTree = "<group>"; };
+		E7FA58FE2470D30400FB412E /* MBRecommendProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBRecommendProvider.swift; sourceTree = "<group>"; };
+		E7FA59002471211500FB412E /* MBRequestLoadingPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBRequestLoadingPlugin.swift; sourceTree = "<group>"; };
+		E7FA590224712DEF00FB412E /* MBRecommendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBRecommendViewModel.swift; sourceTree = "<group>"; };
+		E7FA59042471343A00FB412E /* MBBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBBanner.swift; sourceTree = "<group>"; };
 		EA9996DA8D702EECAAE206B2 /* Pods-MBMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBMusic.release.xcconfig"; path = "Target Support Files/Pods-MBMusic/Pods-MBMusic.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -158,7 +164,8 @@
 		E7AB3EF02456D32E006EB0D1 /* viewModel */ = {
 			isa = PBXGroup;
 			children = (
-				E7FA58F9246FE9E900FB412E /* MBRecommendViewModel.swift */,
+				E7FA58FE2470D30400FB412E /* MBRecommendProvider.swift */,
+				E7FA590224712DEF00FB412E /* MBRecommendViewModel.swift */,
 			);
 			path = viewModel;
 			sourceTree = "<group>";
@@ -173,6 +180,7 @@
 		E7AB3EF22456D32E006EB0D1 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				E7FA59042471343A00FB412E /* MBBanner.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -446,6 +454,7 @@
 			isa = PBXGroup;
 			children = (
 				E7FA58FC246FF76B00FB412E /* MBHttpRequestManager.swift */,
+				E7FA59002471211500FB412E /* MBRequestLoadingPlugin.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -573,12 +582,15 @@
 				E7AB3EDB24558324006EB0D1 /* AppDelegate.swift in Sources */,
 				E756F3552466936D0054B591 /* Global.swift in Sources */,
 				E7AB3F1D2456D95E006EB0D1 /* MBSearchViewController.swift in Sources */,
+				E7FA59052471343A00FB412E /* MBBanner.swift in Sources */,
 				E7AB3F1B2456D938006EB0D1 /* MBRecommendViewController.swift in Sources */,
+				E7FA58FF2470D30400FB412E /* MBRecommendProvider.swift in Sources */,
 				E7FA58FD246FF76B00FB412E /* MBHttpRequestManager.swift in Sources */,
 				E756F35224668F9F0054B591 /* MBNavigationView.swift in Sources */,
+				E7FA59012471211500FB412E /* MBRequestLoadingPlugin.swift in Sources */,
 				E7AB3EDD24558324006EB0D1 /* SceneDelegate.swift in Sources */,
 				E7AB3F232456DCC2006EB0D1 /* UIColorExtention.swift in Sources */,
-				E7FA58FA246FE9E900FB412E /* MBRecommendViewModel.swift in Sources */,
+				E7FA590324712DEF00FB412E /* MBRecommendViewModel.swift in Sources */,
 				E7FA58F8246FE03400FB412E /* MBRecommendBanner.swift in Sources */,
 				E7AB3F192456D8D1006EB0D1 /* MBBaseViewController.swift in Sources */,
 				E7AB3F112456D847006EB0D1 /* MBNavigationController.swift in Sources */,

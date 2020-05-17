@@ -7,24 +7,37 @@ PODS:
     - Kingfisher
   - Moya (14.0.0):
     - Moya/Core (= 14.0.0)
+  - Moya-ObjectMapper/Core (2.9):
+    - Moya (~> 14.0.0-beta.6)
+    - ObjectMapper
+  - Moya-ObjectMapper/RxSwift (2.9):
+    - Moya-ObjectMapper/Core
+    - Moya/RxSwift
+    - RxSwift
   - Moya/Core (14.0.0):
     - Alamofire (~> 5.0)
+  - Moya/RxSwift (14.0.0):
+    - Moya/Core
+    - RxSwift (~> 5.0)
+  - ObjectMapper (3.5.2)
   - RxCocoa (5.0.0):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
   - RxRelay (5.1.1):
     - RxSwift (~> 5)
-  - RxSwift (5.0.0)
+  - RxSwift (5.1.1)
   - SwiftyJSON (5.0.0)
+  - Toast-Swift (5.0.1)
 
 DEPENDENCIES:
   - Alamofire (= 5.1)
   - Kingfisher (= 5.13.4)
   - LLCycleScrollView
-  - Moya (~> 14.0)
+  - Moya-ObjectMapper/RxSwift
+  - Moya/RxSwift (~> 14.0)
   - RxCocoa (= 5)
-  - RxSwift (= 5)
   - SwiftyJSON
+  - Toast-Swift
 
 SPEC REPOS:
   trunk:
@@ -32,21 +45,27 @@ SPEC REPOS:
     - Kingfisher
     - LLCycleScrollView
     - Moya
+    - Moya-ObjectMapper
+    - ObjectMapper
     - RxCocoa
     - RxRelay
     - RxSwift
     - SwiftyJSON
+    - Toast-Swift
 
 SPEC CHECKSUMS:
   Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
   Kingfisher: d2279a7abece3c7f25a80cd2b7f363ca5cf3f44c
   LLCycleScrollView: a08f666671f9fd1a205df9defebc3c217d59abc8
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  Moya-ObjectMapper: 967a99d9ea3aa9c93ddbe112aeca3667f53bfe93
+  ObjectMapper: b53ae947d370bf89423e86be7d4e2d2b2a8d3f40
   RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
-  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: 3cbf7c67ce4ea03ae4288b4b347c6f2141f1b4e5
+PODFILE CHECKSUM: b82c054fae8c6663a9839fa8fac72e14a25ebeaa
 
 COCOAPODS: 1.8.4

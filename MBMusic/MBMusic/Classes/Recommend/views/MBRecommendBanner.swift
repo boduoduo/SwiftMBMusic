@@ -15,18 +15,18 @@ class MBRecommendBanner: UIView {
     open var imageURLStrings : Array<String> = [] {
         didSet {
             if imageURLStrings.count > 0 {
-                banner.imagePaths = imageURLStrings
+                banner!.imagePaths = imageURLStrings
             }
         }
     }
-    var banner = LLCycleScrollView.init()
+    var banner: LLCycleScrollView?
     
     open class func banner() -> MBRecommendBanner {
-        return MBRecommendBanner.init(frame: CGRect.init(x: 0, y: 0, width: SCREEN_WIDTH, height: 332), imageURLs: [])
+        return MBRecommendBanner.init(frame: CGRect.init(x: 0, y: Int(NAV_HEIGHT), width: Int(SCREEN_WIDTH), height: Int(MB_HEIGHT(height: 300.0))), imageURLs: [])
     }
     
     open class func banner(imageURLs: [String]) -> MBRecommendBanner {
-        return MBRecommendBanner.init(frame: CGRect.init(x: 0, y: 0, width: SCREEN_WIDTH, height: 332), imageURLs: imageURLs)
+        return MBRecommendBanner.init(frame: CGRect.init(x: 0, y: Int(NAV_HEIGHT), width: Int(SCREEN_WIDTH), height: Int(MB_HEIGHT(height: 300.0))), imageURLs: imageURLs)
     }
     
     override init(frame: CGRect) {
@@ -46,7 +46,7 @@ class MBRecommendBanner: UIView {
     }
     
     func prepareUI() {
-        banner = LLCycleScrollView.llCycleScrollViewWithFrame(self.bounds)
+        let banner = LLCycleScrollView.llCycleScrollViewWithFrame(self.bounds)
         // 是否自动滚动
         banner.autoScroll = true
         // 是否无限循环，此属性修改了就不存在轮播的意义了 😄
@@ -75,5 +75,6 @@ class MBRecommendBanner: UIView {
         banner.collectionViewBackgroundColor = UIColor.white
         // 添加到view
         self.addSubview(banner)
+        self.banner = banner
     }
 }
